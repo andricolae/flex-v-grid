@@ -10,7 +10,7 @@ header {
     margin-bottom: 40px;
 }
 
-h1 {
+h1, h2 {
     color: #2a9d8f;
 }
 
@@ -33,3 +33,17 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+
+.grid-container .item:nth-child(4) {
+    grid-column: span 2;
+}
+
+.grid-container .item:nth-child(6) {
+    grid-row: span 2;
+}
+
+.grid-container .item:nth-child(11) {
+    grid-column: span 3;
+}
+
+/* media query */
