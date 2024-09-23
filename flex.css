@@ -2,6 +2,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #fdfdfd;
     color: #555;
+    text-align: center;
+    font-size: 25px;
     padding: 20px;
 }
 
@@ -58,4 +60,26 @@ footer {
     border-radius: 8px;
     text-align: center;
     font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .flex-layout {
+        flex-direction: column;
+    }
+    
+    .sidebar-left, .sidebar-right, .main-content {
+        min-height: 400px;
+        flex: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-layout {
+        flex-direction: column;
+    }
+
+    .sidebar-left, .sidebar-right, .main-content {
+        min-height: auto;
+        flex: 1 1 100%;
+    }
 }
