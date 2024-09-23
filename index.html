@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="flex.css">
-    <title>Flexbox Demo</title>
+    <title>Flexbox Layout Site</title>
 </head>
 <body>
     <header>
-        <h1>Flexbox</h1>
+        <h1>Site Layout - Flexbox</h1>
     </header>
-    
-    <section class="flexbox-section">
-        <div class="flex-container">
-            <div class="item">Primul Element</div>
-            <div class="item">Al Doilea Element</div>
-            <div class="item">Al Treilea Element</div>
-        </div>
-    </section>
 
+    <div class="flex-layout">
+        <div class="sidebar-left">Left Sidebar</div>
+        <div class="main-content">Content Area</div>
+        <div class="sidebar-right">Right Sidebar</div>
+    </div>
+
+    <footer>
+        <h2>Footer Section</h2>
+    </footer>
+    
     <button class="item" onclick="window.location.href='grid.html'">Versiune Grid</button>
 </body>
 </html>
